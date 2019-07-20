@@ -13,7 +13,7 @@ module.exports = function(digits) {
   for (let x = 0; x < digits; x++) {
     nines += "9";
   }
-  nines = parseInt(nines)
+  nines = parseInt(nines);
   for (i = 10; i <= nines; i++) {
     for (let j = 10; j <= nines; j++) {
       factor_0 = i;
