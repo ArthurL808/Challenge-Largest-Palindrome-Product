@@ -9,9 +9,13 @@ module.exports = function(digits) {
   var factor_0 = 0;
   var factor_1 = 0;
   var palindromeNumber = 0;
-
-  for (i = 10; i <= 99; i++) {
-    for (let j = 10; j <= 99; j++) {
+  var nines = "";
+  for (let x = 0; x < digits; x++) {
+    nines += "9";
+  }
+  nines = parseInt(nines)
+  for (i = 10; i <= nines; i++) {
+    for (let j = 10; j <= nines; j++) {
       factor_0 = i;
       factor_1 = j;
       let x = factor_0 * factor_1;
